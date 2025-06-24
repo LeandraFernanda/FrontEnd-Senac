@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-pai{
+    background-color: aqua;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: row;/* controla a direção do eixo principal*/
+    justify-content: flex-start;/* controla o alinhamento dos itens ao longo do eixo principal*/
+    align-items: flex-start;/* controla o alinhamento dos itens ao longo do eixo transversal*/
+    flex-wrap: wrap;/* controla se os itens devem quebrar para a próxima linha quando não houver espaço suficiente*/
+    gap: 20px;/* controla o espaçamento entre os itens*/
+
+}
+/* Este estilo será aplicado a todas as divs que forem  filhas de container-pai*/
+.container-pai div{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+#filho1{
+    background-color: yellow;
+    flex-grow: 1;
+    align-self: flex-start;
+    order: 1;/* controla a ordem do item no eixo principal */
+}
+#filho2{
+    background-color: green;
+    padding: 30px;
+    flex-grow: 2;
+    order: 3;
+
+}
+#filho3{
+    background-color: red;
+    flex-grow: 3;
+    order: 2;
+}

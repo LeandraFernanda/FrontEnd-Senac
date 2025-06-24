@@ -1,0 +1,39 @@
+#container_pai{
+    height: 500px; /**Altura do container pai*/
+    background-color: aliceblue;
+    padding: 25px; /*Margem interna*/
+    display: flex;
+    flex-direction: row; /*Controla o eixo principal*/
+    justify-content: center;
+    gap: 50px; /*Espaçamento entre os containers filhos*/
+    align-items: center;
+    flex-wrap: wrap; /*Permite que os containers filhos se movam para a linha seguinte se não houver espaço suficiente*/
+}
+
+#container-1 {
+    background-color: rgb(167, 167, 236);
+    padding: 15px; /*Adiciona margem interna ao container*/
+}
+#container-2 {
+    background-color: rgb(236, 167, 167);
+    flex-grow: 2; /*Permite que este container cresça mais que os outros*/
+    flex-shrink: 1; /*Permite que este container encolha se necessário*/
+    flex-basis: 200px; /*Define a largura base deste container*/
+    min-width: 150px; /*Define a largura mínima deste container*/
+    max-width: 300px; /*Define a largura máxima deste container*/
+    padding: 20px; /*Adiciona margem interna ao container*/
+    align-self: flex-end; /*Alinha este container ao final do eixo transversal*/
+    border: 2px solid rgb(100, 100, 100); /*Adiciona uma borda ao container*/
+    border-radius: 10px; /*Arredonda os cantos da borda*/
+/* order: 2; /*Define a ordem de exibição deste container, permitindo que ele apareça após o container 1 e antes do container 3*/
+     padding: 15px;
+}
+#container-3 {
+    background-color: rgb(167, 236, 167);
+    padding: 15px; /*Adiciona margem interna ao container*/
+}
+.fonte {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}

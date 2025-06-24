@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="post" autocomplete="on">
+            <h2>Cadastro de Usuário</h2>
+            
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autocomplete="name">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required autocomplete="email">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required autocomplete="new-password">
+
+            <fieldset>
+                <legend>Interesses</legend>
+                <label><input type="checkbox" name="interesses" value="html"> HTML</label>
+                <label><input type="checkbox" name="interesses" value="css"> CSS</label>
+                <label><input type="checkbox" name="interesses" value="javascript"> JavaScript</label>
+                <label><input type="checkbox" name="interesses" value="python"> Python</label>
+                <label><input type="checkbox" name="interesses" value="java"> Java</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+                <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+                <label><input type="radio" name="sexo" value="outro"> Outro</label>
+                <label><input type="radio" name="sexo" value="prefiro nao dizer"> Prefiro não dizer</label>
+            </fieldset>
+
+            <label for="curso">Curso Desejado</label>
+            <select name="curso" id="curso" required>
+                <option value="" disabled selected>Selecione um curso</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="40" rows="4" placeholder="Digite sua mensagem"></textarea>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

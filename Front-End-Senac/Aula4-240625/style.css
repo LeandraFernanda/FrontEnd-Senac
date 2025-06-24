@@ -1,0 +1,132 @@
+body {
+    background: #f2f6fc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #2a4d69;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    color: #2a4d69;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2a4d69;
+    outline: none;
+}
+
+fieldset {
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: #f8fafc;
+}
+
+legend {
+    color: #2a4d69;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+    color: #3d5a80;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5em;
+    accent-color: #2a4d69;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #2a4d69;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="reset"] {
+    background: #bfc9d1;
+    color: #2a4d69;
+}
+
+input[type="submit"]:hover {
+    background: #1e3550;
+}
+
+input[type="reset"]:hover {
+    background: #a0b0c0;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+    }
+}
